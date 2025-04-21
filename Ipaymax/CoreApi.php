@@ -10,6 +10,10 @@ use Exception;
  */
 class CoreApi
 {
+    const CREATE_VIRTUAL_ACCOUNT = '/transaction/create/va';
+    const CREATE_QRIS = '/transaction/create/qris';
+    const CREATE_RETAIL = '/transaction/create/retail';
+    const CREATE_EWALLET = '/transaction/create/e-wallet';
 
     /**
      * Create Virtual Account.
@@ -25,7 +29,7 @@ class CoreApi
         }
 
         return ApiRequestor::post(
-            Config::getBaseUrl() . UrlConstant::CREATE_VIRTUAL_ACCOUNT,
+            Config::getBaseUrl() . self::CREATE_VIRTUAL_ACCOUNT,
             Config::$serverKey,
             $payloads,
             $signature

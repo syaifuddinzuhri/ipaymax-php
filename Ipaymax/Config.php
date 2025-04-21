@@ -9,6 +9,8 @@ use Constants\UrlConstant;
  */
 class Config
 {
+    const SANDBOX_BASE_URL = 'https://api-sandbox.ipaymax.com';
+    const PRODUCTION_BASE_URL = 'https://api.ipaymax.com';
 
     /**
      * Your merchant's server key
@@ -69,6 +71,6 @@ class Config
     public static function getBaseUrl()
     {
         return Config::$isProduction ?
-        UrlConstant::PRODUCTION_BASE_URL : UrlConstant::SANDBOX_BASE_URL;
+            self::PRODUCTION_BASE_URL : self::SANDBOX_BASE_URL;
     }
 }
