@@ -1,0 +1,30 @@
+{
+  "name": "ipaymax/ipaymax-php",
+  "description": "IpayMax Payment API",
+  "homepage": "https://ipaymax.com",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Syaifuddin Zuhri",
+      "email": "zuhrideveloper@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-openssl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.7.*",
+    "psy/psysh": "0.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ipaymax\\": "Ipaymax/"
+    }
+  }
+}
