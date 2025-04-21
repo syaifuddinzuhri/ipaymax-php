@@ -11,7 +11,6 @@
       "email": "zuhrideveloper@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
   "require": {
     "php": ">=7.4",
     "ext-curl": "*",
@@ -26,5 +25,6 @@
     "psr-4": {
       "Ipaymax\\": "Ipaymax/"
     }
-  }
+  },
+  "minimum-stability": "stable"
 }
