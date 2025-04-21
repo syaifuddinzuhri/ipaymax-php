@@ -2,7 +2,6 @@
 
 namespace Ipaymax;
 
-use Constants\UrlConstant;
 use Exception;
 
 /**
